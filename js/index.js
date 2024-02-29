@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
       clickable: true,
     },
+    autoplay: {
+      delay: 1200,
+      disableOnInteraction: false,
+    },
+    speed:1200,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -19,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 24,
     speed:1200,
     autoplay: {
-      delay: 1800,
+      delay: 1200,
     },
     loop: true,
   });
