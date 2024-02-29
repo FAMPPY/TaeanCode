@@ -21,47 +21,50 @@
       src="https://kit.fontawesome.com/f677d60065.js"
       crossorigin="anonymous"
     ></script>
+    <!-- js link -->
+    <script src="./js/common.js"></script>
+    <!-- aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
+    <a class="top-btn" href="#">
+      <img src="./images/svg/top-btn-arrow.svg" alt="탑버튼" />
+    </a>
     <div class="container">
       <div class="header-include"></div>
       <main>
-        <section class="main-banner-section">
-          <div class="main-banner-inner">
-            <div class="main-banner-box">
-              <div class="main-banner-contents">
-                <div class="main-banner-slogan-box">
-                  <p>청년이 존중받는 사회를 만들어 나가요</p>
-                  <h2>태안 청년 네트워크</h2>
-                </div>
-                <div class="main-banner-thumb-box">
-                  <img src="./images/main-banner-img.png" alt="메인배너" />
-                </div>
+        <section class="main-slide-section">
+          <div class="swiper main-swiper">
+            <div class="swiper-wrapper main-swiper-wrapper">
+              <div class="swiper-slide main-swiper-slide first">
+                <div class="main-slide-inner">1</div>
               </div>
-              <div class="supply-search-box">
-                <div class="supply-search-contents-box">
-                  <div class="supply-search-text-box">
-                    <p><span>태안군</span>의 모든 청년정책 정보 중,</p>
-                    <p><span>내가 받을 수 있는 지원</span>에 대해 알아보세요</p>
-                  </div>
-                  <a class="supply-search-btn" href="#">맞춤정책 찾기</a>
-                </div>
-                <div class="supply-search-img-box">
-                  <img
-                    src="./images/main-seach-img.svg"
-                    alt="메인서치 이미지"
-                  />
-                </div>
+              <div class="swiper-slide main-swiper-slide second">
+                <div class="main-slide-inner">2</div>
+              </div>
+              <div class="swiper-slide main-swiper-slide third">
+                <div class="main-slide-inner">3</div>
+              </div>
+              <div class="swiper-slide main-swiper-slide fourth">
+                <div class="main-slide-inner">4</div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
         <!-- emd : main-banner-section -->
         <section class="quick-menu-section">
           <div class="quick-menu-section-inner">
             <div class="quick-menu-box-wrap">
-              <h2>주요서비스</h2>
-              <div class="quick-menu-box">
+              <h2>주요서비스 👍</h2>
+              <div
+                class="quick-menu-box"
+                data-aos="fade-up"
+                data-aos-offset="50"
+              >
                 <ul class="quick-menu-icon-list">
                   <li class="quick-menu-icon">
                     <a href="#">
@@ -182,9 +185,12 @@
         <section class="hot-commu-section">
           <div class="hot-commu-inner">
             <div class="title">
-              <h1>지금 핫한 이야기 놓치지 마세요 🔥</h1>
+              <h1>
+                지금 핫한 이야기 놓치지 마세요
+                <img class="fire-emoji" src="./images/fire.gif" alt="불타는" />
+              </h1>
             </div>
-            <div class="hot-commu-wrapper">
+            <div class="hot-commu-wrapper" data-aos="fade-down">
               <div class="dummy-space"></div>
               <div class="swiper hot-swiper">
                 <div class="swiper-wrapper hot-swiper-wrapper">
@@ -367,7 +373,11 @@
             <div class="title">
               <h1>
                 태안 청년들의 <span>성공기</span> 보고 가세요!
-                <img src="./images/eyes-4836_128.gif" alt="눈 이모지" />
+                <img
+                  class="eye-emoji"
+                  src="./images/eyes-4836_128.gif"
+                  alt="눈 이모지"
+                />
               </h1>
               <a href="./interview-story.html">
                 <span>더보기</span>
@@ -375,7 +385,12 @@
               </a>
             </div>
             <ul class="interview-card-items">
-              <li class="interview-card-item">
+              <li
+                class="interview-card-item"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+              >
                 <a href="#">
                   <div class="interview-card-img-box">
                     <img
@@ -396,7 +411,12 @@
                   </div>
                 </a>
               </li>
-              <li class="interview-card-item">
+              <li
+                class="interview-card-item"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="150"
+              >
                 <a href="#">
                   <div class="interview-card-img-box">
                     <img
@@ -416,7 +436,12 @@
                   </div>
                 </a>
               </li>
-              <li class="interview-card-item">
+              <li
+                class="interview-card-item"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="250"
+              >
                 <a href="#">
                   <div class="interview-card-img-box">
                     <img
@@ -445,14 +470,21 @@
           <h2 class="blind">청년지원 슬라이드 섹션</h2>
           <div class="youth-supply-inner">
             <div class="title">
-              <h1>태안에서만 누릴 수 있는 지원들 놓치지 마세요! ✨</h1>
+              <h1>
+                태안에서만 누릴 수 있는 지원들 놓치지 마세요!
+                <img src="./images/twinkle.gif" alt="반짝" />
+              </h1>
               <a href="./interview.html">
                 <span>더보기</span>
                 <img src="./images/svg/plus-01-md.svg" alt="더보기+" />
               </a>
             </div>
             <div class="youth-supply-slides">
-              <div class="swiper youth-supply-swiper">
+              <div
+                class="swiper youth-supply-swiper"
+                data-aos="fade-zoom-in"
+                data-aos-duration="1500"
+              >
                 <div class="swiper-wrapper youth-supply-wrapper">
                   <div class="swiper-slide youth-supply-slide">
                     <div class="youth-supply-top-box">
@@ -659,6 +691,86 @@
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
                   </div>
+                  <div class="swiper-slide youth-supply-slide">
+                    <div class="youth-supply-top-box">
+                      <img
+                        src="./images/svg/youth-mark-always.png"
+                        alt="청년지원 날짜마크"
+                      />
+                      <span class="youth-supply-category welfare-mark"
+                        >복지·문화</span
+                      >
+                    </div>
+                    <div class="youth-supply-middle-box">
+                      <h3>문화누리카드</h3>
+                      <p>
+                        출산장려금 : 첫째 50만원, 둘째 100만원, 셋째이상 200만원
+                        지원
+                      </p>
+                    </div>
+                    <ul class="youth-supply-bottom-box">
+                      <li class="youth-supply-infos">
+                        <strong>주관기관</strong>
+                        <span>충청남도 태안군</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>제공유형</strong>
+                        <span>연간 13만원 지원</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>신청방법</strong>
+                        <span>주민센터를 통한 발급</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>신청연령</strong>
+                        <span>만 19세 ~ 39세</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="youth-supply-to-detail-btn">
+                      <span>자세히 보기</span>
+                      <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide youth-supply-slide">
+                    <div class="youth-supply-top-box">
+                      <img
+                        src="./images/svg/youth-mark-always.png"
+                        alt="청년지원 날짜마크"
+                      />
+                      <span class="youth-supply-category parenting welfare-mark"
+                        >육아</span
+                      >
+                    </div>
+                    <div class="youth-supply-middle-box">
+                      <h3>출산장려금 지원</h3>
+                      <p>
+                        출산장려금 : 첫째 50만원, 둘째 100만원, 셋째이상 200만원
+                        지원
+                      </p>
+                    </div>
+                    <ul class="youth-supply-bottom-box">
+                      <li class="youth-supply-infos">
+                        <strong>주관기관</strong>
+                        <span>충청남도 태안군</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>제공유형</strong>
+                        <span>현금지급</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>신청방법</strong>
+                        <span>방문/읍·면사무소 신청</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>신청연령</strong>
+                        <span>태안군 거주민이라면 제한없음</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="youth-supply-to-detail-btn">
+                      <span>자세히 보기</span>
+                      <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -668,7 +780,12 @@
         <section class="notice-release-section">
           <div class="notice-release-inner">
             <div class="notice-release-wrap">
-              <ul class="notice-release-items notice-items">
+              <ul
+                class="notice-release-items notice-items"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <li class="notice-release-title notice-title">
                   <h3>공지사항</h3>
                   <a href="#">
@@ -704,7 +821,12 @@
                   </a>
                 </li>
               </ul>
-              <ul class="notice-release-items release-items">
+              <ul
+                class="notice-release-items release-items"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <li class="notice-release-title release-title">
                   <h3>보도자료</h3>
                   <a href="#">
@@ -756,7 +878,7 @@
         <section class="policy-banner-section">
           <div class="policy-banner-inner">
             <ul class="policy-banner-wrap">
-              <li class="policy-banner-item">
+              <li class="policy-banner-item" data-aos="fade-right">
                 <div class="policy-text-box">
                   <h2><span>충청남도</span> 청년정책</h2>
                   <a href="#">알아보러 가기</a>
@@ -765,7 +887,7 @@
                   <img src="./images/policy-img-01.svg" alt="정책배너" />
                 </div>
               </li>
-              <li class="policy-banner-item">
+              <li class="policy-banner-item" data-aos="fade-left">
                 <div class="policy-text-box">
                   <h2><span>중앙정부</span> 청년정책</h2>
                   <a href="#">알아보러 가기</a>
