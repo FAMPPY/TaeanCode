@@ -213,13 +213,15 @@ header.dark .mega-menu {
   flex-direction: column;
   gap: 6px;
 }
+.menu-num li:first-of-type{margin-top: 12px;}
+.menu-num li:last-of-type{margin-bottom: 12px;}
 .menu-num li a,
 .small-menu strong{
   font-size: var(--title-sm-18);
   font-weight: var(--medium);
 }
 .menu-num:hover{
-  background: url(../images/svg/mega-menu-2-depth-bg.svg);
+  background-color: var(--primary-50);
 }
 .small-menu li a{
   font-size: var(--body-md-16);

@@ -24,11 +24,10 @@
           </div>
           <nav class="header-nav">
             <ul class="header-nav-list">
-              <li class="first-nav-menu"><a href="#none">성공스토리</a></li>
-              <li class="second-nav-menu"><a href="#none">청년마당</a></li>
-              <li class="third-nav-menu"><a href="#none">태안청년정책</a></li>
-              <li class="fource-nav-menu"><a href="#none">청년정책 +</a></li>
-              <li class="firth-nav-menu"><a href="#none">공지사항</a></li>
+              <li class="first-nav-menu"><a href="#none">태안Talk</a></li>
+              <li class="second-nav-menu"><a href="#none">태안人터뷰</a></li>
+              <li class="third-nav-menu"><a href="#none">태안 청년정책</a></li>
+              <li class="fource-nav-menu"><a href="#none">새소식</a></li>
             </ul>
           </nav>
           <ul class="search-login-box">
@@ -58,18 +57,11 @@
           <div class="dummy"></div>
           <nav class="mega-menu-nav">
             <ul class="first-menu menu-num">
-              <li><a href="#none">창업 성공기</a></li>
-              <li><a href="#none">취업 성공기</a></li>
+              <li></li>
             </ul>
             <ul class="second-menu menu-num">
-              <li><a href="#none">토크 게시판</a></li>
-              <li>
-                <ul class="small-menu">
-                  <li><strong>문화생활</strong></li>
-                  <li><a href="#">공간 안내</a></li>
-                  <li><a href="#">공간 대여</a></li>
-                </ul>
-              </li>
+              <li><a href="#none">창업 분야</a></li>
+              <li><a href="#none">취업 분야</a></li>
             </ul>
             <ul class="third-menu menu-num">
               <li><a href="#none">일자리</a></li>
@@ -78,13 +70,11 @@
               <li><a href="#none">주거 지원</a></li>
               <li><a href="#none">육아 지원</a></li>
               <li><a href="#none">교육 지원</a></li>
+              <li><a href="#none">공간 대여</a></li>
             </ul>
             <ul class="fouth-menu menu-num">
-              <li><a href="#none">충청남도 청년정책</a></li>
-              <li><a href="#none">중앙정부 청년정책</a></li>
-            </ul>
-            <ul class="firth-menu menu-num">
               <li><a href="#none">공지사항</a></li>
+              <li><a href="#none">보도자료</a></li>
             </ul>
           </nav>
           <div class="dummy2"></div>
@@ -173,14 +163,12 @@
       const secondNavMenu = document.querySelector(".second-nav-menu");
       const thirdNavMenu = document.querySelector(".third-nav-menu");
       const fourceNavMenu = document.querySelector(".fource-nav-menu");
-      const firthNavMenu = document.querySelector(".firth-nav-menu");
 
       /* mega-nav-list */
       const firstMenu = document.querySelector(".first-menu");
       const secondMenu = document.querySelector(".second-menu");
       const thirdMenu = document.querySelector(".third-menu");
       const fouthMenu = document.querySelector(".fouth-menu");
-      const firthMenu = document.querySelector(".firth-menu");
 
       /* 각메뉴마다 호버시 헤더 메뉴 액티브 */
       firstMenu.addEventListener("mouseenter", () => {
@@ -206,12 +194,6 @@
       });
       fouthMenu.addEventListener("mouseleave", () => {
         fourceNavMenu.classList.remove("active");
-      });
-      firthMenu.addEventListener("mouseenter", () => {
-        firthNavMenu.classList.add("active");
-      });
-      firthMenu.addEventListener("mouseleave", () => {
-        firthNavMenu.classList.remove("active");
       });
 
       /* 스크롤 내릴시 header에 active 클래스 추가 */

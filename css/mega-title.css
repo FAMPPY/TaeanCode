@@ -19,6 +19,10 @@
   font-family: "BMDOHYEON";
   font-size: 48px;
 }
+.section-mega-title-box h2 span{
+  font-family: var(--main-font);
+  font-weight: var(--bold);
+}
 .section-mega-title-box p{
   font-size: var(--body-lg-18);
   font-weight: var(--medium);

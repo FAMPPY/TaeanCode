@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-family: var(--main-font);
   color: var(--neutral-900);
+  position: relative;
 }
 ul,
 li {
@@ -113,9 +114,8 @@ section:not(.main-banner-section,
   border-radius: 50%;
   background-color: var(--white);
   border: 2px solid var(--primary-700);
-  position: fixed;
+  position: absolute;
   right: 20px;
-  bottom: 80px;
   z-index: 100;
   transition: .4s;
   opacity: 0;
@@ -125,7 +125,7 @@ section:not(.main-banner-section,
   justify-content: center;
 }
 .top-btn.active{
-  right: 40px;
+  right: 32px;
   opacity: 1;
   visibility: visible;
 }

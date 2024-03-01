@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>메인페이지</title>
     <!-- policy -->
-    <meta
+    <!--     <meta
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
-    />
+    /> -->
     <!-- 제이쿼리 cdn -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- css link -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- swiper js -->
     <link
       rel="stylesheet"
@@ -21,16 +19,14 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/include.js"></script>
-    <!-- font-awesome cdn -->
-    <script
-      src="https://kit.fontawesome.com/f677d60065.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- js link -->
     <script src="./js/common.js"></script>
     <!-- aos js -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <a class="top-btn" href="#">
@@ -55,16 +51,21 @@
                 <div class="main-slide-inner">4</div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <div class="main-slide-tool-box">
+              <div class="swiper-pagination main-swiper-pagination"></div>
+              <div class="main-swiper-play-btn"></div>
+            </div>
           </div>
         </section>
-        <!-- emd : main-banner-section -->
+        <!-- end : main-banner-section -->
         <section class="quick-menu-section">
           <div class="quick-menu-section-inner">
             <div class="quick-menu-box-wrap">
-              <h2>주요서비스 👍</h2>
+              <h2>
+                주요서비스 <img src="./images/thumb-up.gif" alt="엄지척" />
+              </h2>
               <div
                 class="quick-menu-box"
                 data-aos="fade-up"
@@ -368,6 +369,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="hot-swiper-play-btn"></div>
               </div>
             </div>
           </div>
@@ -399,7 +401,7 @@
                 <a href="#">
                   <div class="interview-card-img-box">
                     <img
-                      src="./images/interview-pic-01.png"
+                      src="./images/interview-section/interview-section-img01.png"
                       alt="인터뷰 사진"
                     />
                   </div>
@@ -425,14 +427,12 @@
                 <a href="#">
                   <div class="interview-card-img-box">
                     <img
-                      src="./images/interview-pic-02.png"
+                      src="./images/interview-section/interview-section-img02.png"
                       alt="인터뷰 사진"
                     />
                   </div>
                   <div class="interview-card-text-box">
-                    <h3>
-                      태안 청년농업인 정착지원금 신청하고 근심걱정 사라졌어요
-                    </h3>
+                    <h3>태안 관광지에서 인생 사진 건지세요!</h3>
                     <span>창업성공기</span>
                     <div class="interview-card-text-view-box">
                       <span>조회수 59</span>
@@ -450,15 +450,12 @@
                 <a href="#">
                   <div class="interview-card-img-box">
                     <img
-                      src="./images/interview-pic-03.png"
+                      src="./images/interview-section/interview-section-img03.png"
                       alt="인터뷰 사진"
                     />
                   </div>
                   <div class="interview-card-text-box">
-                    <h3>
-                      늦은나이 걱정많았지만, 태안 공공근로 사업덕에 늦깍이
-                      신입사원이 되었지요
-                    </h3>
+                    <h3>태안 여성농업인 프로그램으로 새출발을 시작했습니다.</h3>
                     <span>취업성공기</span>
                     <div class="interview-card-text-view-box">
                       <span>조회수 128</span>
@@ -511,10 +508,6 @@
                     </div>
                     <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
-                      </li>
-                      <li class="youth-supply-infos">
                         <strong>제공유형</strong>
                         <span>현금지급</span>
                       </li>
@@ -523,8 +516,8 @@
                         <span>방문</span>
                       </li>
                       <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>만 20 ~ 39세</span>
+                        <strong>신청기간</strong>
+                        <span>상시</span>
                       </li>
                     </ul>
                     <a href="#" class="youth-supply-to-detail-btn">
@@ -553,10 +546,6 @@
                     </div>
                     <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
-                      </li>
-                      <li class="youth-supply-infos">
                         <strong>제공유형</strong>
                         <span>이자지원</span>
                       </li>
@@ -565,8 +554,8 @@
                         <span>복지센터 방문</span>
                       </li>
                       <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>만 18 ~ 45세</span>
+                        <strong>신청기간</strong>
+                        <span>~2024.05.22</span>
                       </li>
                     </ul>
                     <a href="#" class="youth-supply-to-detail-btn">
@@ -595,10 +584,6 @@
                     </div>
                     <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
-                      </li>
-                      <li class="youth-supply-infos">
                         <strong>제공유형</strong>
                         <span>현금지급</span>
                       </li>
@@ -607,8 +592,8 @@
                         <span>방문</span>
                       </li>
                       <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>만 18 ~ 40세</span>
+                        <strong>신청기간</strong>
+                        <span>~2024.01.31</span>
                       </li>
                     </ul>
                     <a href="#" class="youth-supply-to-detail-btn">
@@ -619,7 +604,7 @@
                   <div class="swiper-slide youth-supply-slide">
                     <div class="youth-supply-top-box">
                       <img
-                        src="./images/svg/youth-mark-closed.png"
+                        src="./images/svg/youth-mark-always.png"
                         alt="청년지원 날짜마크"
                       />
                       <span class="youth-supply-category edu welfare-mark"
@@ -635,9 +620,41 @@
                     </div>
                     <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
+                        <strong>제공유형</strong>
+                        <span>현금지급</span>
                       </li>
+                      <li class="youth-supply-infos">
+                        <strong>신청방법</strong>
+                        <span>방문</span>
+                      </li>
+                      <li class="youth-supply-infos">
+                        <strong>신청기간</strong>
+                        <span>상시</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="youth-supply-to-detail-btn">
+                      <span>자세히 보기</span>
+                      <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide youth-supply-slide">
+                    <div class="youth-supply-top-box">
+                      <img
+                        src="./images/svg/youth-mark-always.png"
+                        alt="청년지원 날짜마크"
+                      />
+                      <span class="youth-supply-category parenting welfare-mark"
+                        >육아</span
+                      >
+                    </div>
+                    <div class="youth-supply-middle-box">
+                      <h3>출산장려금 지원</h3>
+                      <p>
+                        출산장려금 : 첫째 50만원, 둘째 100만원, 셋째이상 200만원
+                        지원
+                      </p>
+                    </div>
+                    <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
                         <strong>제공유형</strong>
                         <span>현금지급</span>
@@ -647,8 +664,8 @@
                         <span>방문</span>
                       </li>
                       <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>만 19 ~ 39세</span>
+                        <strong>신청기간</strong>
+                        <span>상시</span>
                       </li>
                     </ul>
                     <a href="#" class="youth-supply-to-detail-btn">
@@ -662,33 +679,26 @@
                         src="./images/svg/youth-mark-always.png"
                         alt="청년지원 날짜마크"
                       />
-                      <span class="youth-supply-category parenting welfare-mark"
-                        >육아</span
+                      <span class="youth-supply-category job welfare-mark"
+                        >일자리</span
                       >
                     </div>
                     <div class="youth-supply-middle-box">
-                      <h3>출산장려금 지원</h3>
-                      <p>
-                        출산장려금 : 첫째 50만원, 둘째 100만원, 셋째이상 200만원
-                        지원
-                      </p>
+                      <h3>청년창업자금 무이자대출지원</h3>
+                      <p>청년창업자에게 무이자 대출 및 이자를 지원</p>
                     </div>
                     <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
-                      </li>
-                      <li class="youth-supply-infos">
                         <strong>제공유형</strong>
-                        <span>현금지급</span>
+                        <span>최대 5천만 대출, 5년간 이자지원</span>
                       </li>
                       <li class="youth-supply-infos">
                         <strong>신청방법</strong>
-                        <span>방문/읍·면사무소 신청</span>
+                        <span>상담 후 지원</span>
                       </li>
                       <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>태안군 거주민이라면 제한없음</span>
+                        <strong>신청기간</strong>
+                        <span>상시</span>
                       </li>
                     </ul>
                     <a href="#" class="youth-supply-to-detail-btn">
@@ -699,76 +709,33 @@
                   <div class="swiper-slide youth-supply-slide">
                     <div class="youth-supply-top-box">
                       <img
-                        src="./images/svg/youth-mark-always.png"
+                        src="./images/svg/youth-mark-ongoing.png"
                         alt="청년지원 날짜마크"
                       />
-                      <span class="youth-supply-category welfare-mark"
-                        >복지·문화</span
+                      <span
+                        class="youth-supply-category edu parenting welfare-mark"
+                        >교육</span
                       >
                     </div>
                     <div class="youth-supply-middle-box">
-                      <h3>문화누리카드</h3>
+                      <h3>공공외교 활동 강화</h3>
                       <p>
-                        출산장려금 : 첫째 50만원, 둘째 100만원, 셋째이상 200만원
-                        지원
+                        태안군 내 외국인 유학생 합창단 및 태권도 동아리 운영,
+                        춘천시 시티투어 운영
                       </p>
                     </div>
                     <ul class="youth-supply-bottom-box">
                       <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
-                      </li>
-                      <li class="youth-supply-infos">
                         <strong>제공유형</strong>
-                        <span>연간 13만원 지원</span>
+                        <span>-</span>
                       </li>
                       <li class="youth-supply-infos">
                         <strong>신청방법</strong>
-                        <span>주민센터를 통한 발급</span>
+                        <span>홈페이지 신청</span>
                       </li>
                       <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>만 19세 ~ 39세</span>
-                      </li>
-                    </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
-                      <span>자세히 보기</span>
-                      <img src="./images/svg/chevron-right-01.svg" alt="방향" />
-                    </a>
-                  </div>
-                  <div class="swiper-slide youth-supply-slide">
-                    <div class="youth-supply-top-box">
-                      <img
-                        src="./images/svg/youth-mark-always.png"
-                        alt="청년지원 날짜마크"
-                      />
-                      <span class="youth-supply-category parenting welfare-mark"
-                        >육아</span
-                      >
-                    </div>
-                    <div class="youth-supply-middle-box">
-                      <h3>출산장려금 지원</h3>
-                      <p>
-                        출산장려금 : 첫째 50만원, 둘째 100만원, 셋째이상 200만원
-                        지원
-                      </p>
-                    </div>
-                    <ul class="youth-supply-bottom-box">
-                      <li class="youth-supply-infos">
-                        <strong>주관기관</strong>
-                        <span>충청남도 태안군</span>
-                      </li>
-                      <li class="youth-supply-infos">
-                        <strong>제공유형</strong>
-                        <span>현금지급</span>
-                      </li>
-                      <li class="youth-supply-infos">
-                        <strong>신청방법</strong>
-                        <span>방문/읍·면사무소 신청</span>
-                      </li>
-                      <li class="youth-supply-infos">
-                        <strong>신청연령</strong>
-                        <span>태안군 거주민이라면 제한없음</span>
+                        <strong>신청기간</strong>
+                        <span>~2024.06.14</span>
                       </li>
                     </ul>
                     <a href="#" class="youth-supply-to-detail-btn">
@@ -789,7 +756,7 @@
                 class="notice-release-items notice-items"
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1200"
               >
                 <li class="notice-release-title notice-title">
                   <h3>공지사항</h3>
@@ -830,7 +797,7 @@
                 class="notice-release-items release-items"
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1200"
               >
                 <li class="notice-release-title release-title">
                   <h3>보도자료</h3>

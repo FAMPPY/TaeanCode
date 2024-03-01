@@ -1,28 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /* main-slide */
-  let mainSwiper = new Swiper(".main-swiper", {
-    slidesPerView: 1,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 1200,
-      disableOnInteraction: false,
-    },
-    speed:1200,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
   /* youth-supply-swiper */
   const supplySwiper = new Swiper(".youth-supply-swiper", {
     slidesPerView: 4.3,
     spaceBetween: 24,
-    speed:1200,
+    speed: 1200,
     autoplay: {
       delay: 1200,
     },
@@ -32,19 +13,58 @@ document.addEventListener("DOMContentLoaded", function () {
   let hotSwiper = new Swiper(".hot-swiper", {
     slidesPerView: 3.05,
     spaceBetween: 34,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".hot-commu-section .swiper-button-next",
+      prevEl: ".hot-commu-section .swiper-button-prev",
     },
     loop: true,
     autoplay: {
       delay: 1800,
     },
     speed: 1500,
+  });
+  let hotSlideToggle = document.querySelector(".hot-swiper-play-btn");
+  let isHotAutoplay = true;
+
+  hotSlideToggle.addEventListener("click", function (e) {
+    if (isHotAutoplay) {
+      hotSwiper.autoplay.stop();
+      e.target.classList.toggle("active");
+    } else {
+      hotSwiper.autoplay.start();
+      e.target.classList.toggle("active");
+    }
+    isHotAutoplay = !isHotAutoplay;
+  });
+  /* main-slide */
+  let mainSwiper = new Swiper(".main-swiper", {
+    loop: true,
+    pagination: {
+      el: ".main-swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".main-swiper .swiper-button-next",
+      prevEl: ".main-swiper .swiper-button-prev",
+    },
+    loop: true,
+    autoplay: {
+      delay: 1800,
+    },
+    speed: 800,
+  });
+  let mainSlideToggle = document.querySelector(".main-swiper-play-btn");
+  let isAutoplay = true;
+
+  mainSlideToggle.addEventListener("click", function (e) {
+    if (isAutoplay) {
+      mainSwiper.autoplay.stop();
+      e.target.classList.toggle("active");
+    } else {
+      mainSwiper.autoplay.start();
+      e.target.classList.toggle("active");
+    }
+    isAutoplay = !isAutoplay;
   });
 
   /* aos js */
