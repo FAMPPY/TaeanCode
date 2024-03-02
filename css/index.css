@@ -31,8 +31,19 @@
 .main-swiper-slide.fourth{
   background: url(../images/main-slide/main-slide-img-04.png) no-repeat center /cover;
 }
-.main-slide-inner{
-  border: 1px solid red;
+.main-slide-text-box{
+  display: flex;
+}
+.main-swiper-slide.first .main-slide-text-box,
+.main-swiper-slide.fourth .main-slide-text-box{
+  padding-top: 40px;
+  padding-right: 100px;
+  justify-content: flex-end;
+}
+.main-swiper-slide.second .main-slide-text-box,
+.main-swiper-slide.third .main-slide-text-box{
+  padding-top: 40px;
+  padding-left: 100px;
 }
 /* main-slide-custom */
 .main-swiper .swiper-pagination-bullet{

@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   const statusBtn = document.querySelectorAll(".status-btn");
   /* isotope 플러그인 */
+  statusBtn.forEach((btn) => {
+    if (btn.classList.contains("is-checked")) {
+    }
+  });
+  let iso = new Isotope(".interview-content-box", {
+    itemSelector: ".interview-item",
+    layoutMode: "fitRows",
+    filter: "*",
+  });
   if (pageCode == "emp") {
     iso = new Isotope(".interview-content-box", {
       itemSelector: ".interview-item",
@@ -17,18 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     iso = new Isotope(".interview-content-box", {
       itemSelector: ".interview-item",
       layoutMode: "fitRows",
-      filter: "*",
+      filter:'*'
     });
   }
-  statusBtn.forEach((btn) => {
-    if (btn.classList.contains("is-checked")) {
-    }
-  });
-  var iso = new Isotope(".interview-content-box", {
-    itemSelector: ".interview-item",
-    layoutMode: "fitRows",
-    filter: "*",
-  });
   // filter functions
   var filterFns = {
     // show if number is greater than 50
