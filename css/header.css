@@ -223,7 +223,7 @@ header.dark .mega-menu {
   font-weight: var(--medium);
 }
 .menu-num:hover{
-  background-color: var(--primary-50);
+  background-color: rgba(227, 243, 255, .4);
 }
 .menu-num li{
   padding: 2px 12px;

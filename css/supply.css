@@ -56,7 +56,7 @@
   font-size: var(--body-sm-14);
 }
 .main-polcy-info p {
-  width: 200px;
+  width: 198px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
