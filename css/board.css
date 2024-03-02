@@ -33,13 +33,16 @@
   display: flex;
   align-items: center;
 }
-.board-hot-title a img{
+.board-hot-title a img,
+.board-hot-end-title-box a img{
   transition: .4s;
 }
-.board-hot-title a:hover img{
+.board-hot-title a:hover img,
+.board-hot-end-title-box a:hover img{
   transform: rotate(180deg);
 }
-.board-hot-title a span{
+.board-hot-title a span,
+.board-hot-end-title-box a span{
   font-weight: var(--semi-bold);
   font-size: var(--body-lg-18);
 }
@@ -72,7 +75,11 @@
   -webkit-box-orient: vertical;
   word-break: keep-all;
 }
-.board-hot-content-text-box > span{
+.board-hot-content-info-box{
+  display: flex;
+  gap: 10px;
+}
+.board-hot-content-info-box > span{
   font-size: var(--body-sm-14);
   font-weight: var(--medium);
   color: var(--neutral-800);
@@ -115,24 +122,31 @@
   height: 152px;
 }
 .board-hot-middle-box > div > h2,
-.board-table-box h2{
+.board-table-box h2,
+.board-hot-end-title-box h2{
   font-weight: var(--bold);
   font-size: var(--title-xl-32);
   margin-bottom: 22px; 
 }
+.board-hot-end-title-box h2{
+  margin-bottom: 0;
+}
 .my-sub-tab-box{
   width: 434px;
 }
-.my-sub-tab span{
+.my-sub-tab span,
+.hot-sub-tag-box span{
   padding: 2px 12px;
   border-radius: 12px;
-  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--neutral-100);
-  border: 1px solid var(--neutral-300);
+  background-color: #F6ECFF;
+  border: 1px solid #E2C3FF;
+}
+.my-sub-tab span{
   font-size: var(--body-lg-18);
+  height: 26px;
 }
 .my-sub-tab{
   display: flex;
@@ -233,6 +247,139 @@
   top: 50%;
   transform: translateY(-50%);
   right: 32px;
+}
+/* board-hot-end-box */
+.board-hot-end-title-box{
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.board-hot-end-title-box, 
+.board-hot-end-title-box a{
+  display: flex;
+  align-items: center;
+}
+.hot-sub-box{
+  padding: 0 40px;
+  display: flex;
+  align-items: center; 
+  gap: 30px;
+}
+.hot-sub-box{  }
+.hot-sub-item{
+  width: 360px;
+  height: 342px;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid var(--neutral-300);
+  background-color: var(--white);
+}
+.hot-sub-item-user-info-tag-box{
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.hot-sub-item-user-info-tag-box,
+.hot-sub-item-user-info-box,
+.hot-sub-item-user-info,
+.hot-sub-item-date{
+  display: flex;
+}
+.hot-sub-item-user-info{
+  align-items: center;
+  width: 150px;
+  height: 32px;
+  gap: 6px;
+}
+.hot-sub-item-user-info > img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.hot-sub-item-user-info span{
+  color: var(--neutral-800);
+  font-size: var(--body-lg-18);
+}
+.hot-sub-item-date{
+  align-items: center;
+  color: var(--neutral-700);
+  font-size: var(--body-sm-14);
+}
+.hot-sub-item-user-info-box{
+  justify-content: space-between;
+}
+.hot-sub-tag-box{
+  display: flex;
+  gap: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.hot-sub-tag-box span{
+  font-size: var(--body-sm-14);
+  color: var(--neutral-800);
+}
+.hot-sub-tag-box span.unselect{
+  background-color: var(--neutral-100);
+  border-color: var(--neutral-300);
+}
+.hot-sub-item-content-box{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.hot-sub-item-content-box h3{
+  font-size: var(--title-lg-24);
+  font-weight: var(--medium);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.hot-sub-item-content-box p{
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+  height: 60px;
+}
+.hot-sub-item-content-view-total-box{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hot-sub-item-content-view-box{
+  display: flex;
+  height: 62px;
+  padding-top: 30px;
+  align-items: end;
+}
+.hot-sub-item-content-view-box{
+  font-size: var(--body-sm-14);
+  color: var(--neutral-700);
+  display: flex;
+  gap: 8px;
+}
+.hot-sub-item-content-view-box span{
+  position: relative;
+
+}
+.hot-sub-item-content-view-box span::after{
+  position: absolute;
+  content: "|";
+  right: -6px;
+}
+.hot-sub-item-content-view-box span:last-of-type::after{
+  display: none;
+}
+.hot-sub-item-content-view-box span em{
+  font-style: normal;
+}
+.hot-sub-item-content-view-box span em:first-of-type{
+  color: var(--warning);
 }
 /* board-table */
 .board-table {
