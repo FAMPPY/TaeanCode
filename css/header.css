@@ -188,7 +188,7 @@ header.dark .mega-menu {
   background: #222222;
 }
 .mega-menu.active {
-  max-height: 260px;
+  max-height: 280px;
   padding-bottom: 10px;
 }
 .mega-menu-inner {
@@ -203,9 +203,11 @@ header.dark .mega-menu {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 160px;
+  padding: 0 5px;
 }
 .mega-menu-nav ul li {
-  width: 160px;
+  width: 150px;
   text-align: center;
 }
 .small-menu{
@@ -222,6 +224,14 @@ header.dark .mega-menu {
 }
 .menu-num:hover{
   background-color: var(--primary-50);
+}
+.menu-num li{
+  padding: 2px 12px;
+  border-radius: 10px;
+}
+.menu-num li:hover{
+  color: var(--white);
+  background-color: var(--primary-700);
 }
 .small-menu li a{
   font-size: var(--body-md-16);

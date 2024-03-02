@@ -76,8 +76,8 @@ section:not(.main-banner-section,
   justify-content: space-between;
 }
 .title img{
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 .title h1 {
   font-weight: var(--semi-bold);

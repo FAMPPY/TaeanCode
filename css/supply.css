@@ -271,14 +271,16 @@
 .youth-supply-card-detail p{
   color: var(--white);
   width: 203px;
-  height: 112px;
+/*   height: 112px; */
   font-size: var(--body-lg-18);
   font-weight: var(--semi-bold);
   overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  line-height: 1.3;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 .youth-supply-top-box {
   display: flex;

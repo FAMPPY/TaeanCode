@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>공지사항-공지사항</title>
+    <title>공지사항-보도자료</title>
     <!-- 제이쿼리 cdn -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- css link -->
@@ -33,11 +33,13 @@
               <a class="site-location" href="#">새소식</a>
             </div>
             <div class="notice-btn-box">
-              <button class="notice-tab-btn notice-btn active">공지사항</button>
-              <button class="notice-tab-btn release-btn">보도자료</button>
+              <button class="notice-tab-btn notice-btn">공지사항</button>
+              <button class="notice-tab-btn active release-btn">
+                보도자료
+              </button>
             </div>
             <div class="notice-all-pages">
-              <div class="notice-page page active" data-page="notice">
+              <div class="notice-page page" data-page="notice">
                 <ul class="page-list notice-page-list">
                   <li class="page-list-item">
                     <a href="#none">
@@ -281,7 +283,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="release-page page" data-page="release">
+              <div class="release-page page active" data-page="release">
                 <ul class="page-list release-page-list">
                   <li class="page-list-item">
                     <a href="#none">

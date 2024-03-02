@@ -23,7 +23,7 @@
 .notice-all-pages{
   width: 100%;
   position: relative;
-  min-height: 1980px;
+  min-height: 1960px;
 }
 .notice-all-pages > div{
   position: absolute;
@@ -35,7 +35,7 @@
   display: block;
 }
 /* page-list */
-.page-list-item {
+.page-list-item a {
   display: flex;
   align-items: center;
   padding: 24px 36px;

@@ -52,16 +52,23 @@
   padding-bottom: 28px;
 }
 .main-swiper .swiper-pagination.main-swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
-  top: auto;
-  bottom: 0px;
+  position: static;
+  width: 100px;
+}
+.main-slide-tool-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 32px;
 }
 .main-swiper-play-btn {
-  position: absolute;
+/*   position: absolute;
   left: 54.5%;
   transform: translateX(-54.5%);
-  bottom: 0px;
-  width: 24px;
-  height: 24px;
+  bottom: 0px; */
+  width: 12px;
+  height: 12px;
   background : url(../images/svg/autoplay-btn-pause.svg)no-repeat center /cover;
   color: #fff;
   line-height: 24px;

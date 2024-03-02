@@ -11,7 +11,6 @@
     /> -->
     <!-- 제이쿼리 cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <!-- swiper js -->
     <link
       rel="stylesheet"
@@ -39,7 +38,11 @@
           <div class="swiper main-swiper">
             <div class="swiper-wrapper main-swiper-wrapper">
               <div class="swiper-slide main-swiper-slide first">
-                <div class="main-slide-inner">1</div>
+                <div class="main-slide-inner">
+                  <div class="main-slide-text-box">
+                    <img src="." alt="">
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide main-swiper-slide second">
                 <div class="main-slide-inner">2</div>
@@ -73,29 +76,51 @@
               >
                 <ul class="quick-menu-icon-list">
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./board.html">
+                      <div class="quick-menu-icon-img-box">
+                        <img
+                          src="./images/quick-icons/icon-our.svg"
+                          alt="퀵메뉴 아이콘"
+                        />
+                      </div>
+                      <span>태안Talk</span>
+                    </a>
+                  </li>
+                  <li class="quick-menu-icon">
+                    <a href="./interview-story-found.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-founded-story.svg"
                           alt="퀵메뉴 아이콘"
                         />
                       </div>
-                      <span>창업성공기</span>
+                      <span>창업인터뷰</span>
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./interview-story-employ.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-employment-story.svg"
                           alt="퀵메뉴 아이콘"
                         />
                       </div>
-                      <span>취업이야기</span>
+                      <span>취업인터뷰 </span>
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./support-page.html">
+                      <div class="quick-menu-icon-img-box">
+                        <img
+                          src="./images/quick-icons/icon-job.svg"
+                          alt="퀵메뉴 아이콘"
+                        />
+                      </div>
+                      <span>일자리</span>
+                    </a>
+                  </li>
+                  <li class="quick-menu-icon">
+                    <a href="./support-page.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-founded-supply.svg"
@@ -106,7 +131,7 @@
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./support-page.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-employment-supply.svg"
@@ -117,7 +142,7 @@
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./support-page.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-home.svg"
@@ -128,7 +153,7 @@
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./support-page.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-edu.svg"
@@ -139,7 +164,7 @@
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="./support-page.html">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-parenting.svg"
@@ -150,36 +175,14 @@
                     </a>
                   </li>
                   <li class="quick-menu-icon">
-                    <a href="#">
-                      <div class="quick-menu-icon-img-box">
-                        <img
-                          src="./images/quick-icons/icon-job.svg"
-                          alt="퀵메뉴 아이콘"
-                        />
-                      </div>
-                      <span>일자리지원</span>
-                    </a>
-                  </li>
-                  <li class="quick-menu-icon">
-                    <a href="#">
+                    <a href="#none">
                       <div class="quick-menu-icon-img-box">
                         <img
                           src="./images/quick-icons/icon-culture.svg"
                           alt="퀵메뉴 아이콘"
                         />
                       </div>
-                      <span>문화생활지원</span>
-                    </a>
-                  </li>
-                  <li class="quick-menu-icon">
-                    <a href="#">
-                      <div class="quick-menu-icon-img-box">
-                        <img
-                          src="./images/quick-icons/icon-our.svg"
-                          alt="퀵메뉴 아이콘"
-                        />
-                      </div>
-                      <span>우리이야기</span>
+                      <span>공간대여</span>
                     </a>
                   </li>
                 </ul>
@@ -196,12 +199,12 @@
                 <img class="fire-emoji" src="./images/fire.gif" alt="불타는" />
               </h1>
             </div>
-            <div class="hot-commu-wrapper" data-aos="fade-down">
+            <div class="hot-commu-wrapper">
               <div class="dummy-space"></div>
               <div class="swiper hot-swiper">
-                <div class="swiper-wrapper hot-swiper-wrapper">
+                <div class="swiper-wrapper hot-swiper-wrapper" data-aos="fade-down" data-aos-offset="180">
                   <div class="swiper-slide hot-swiper-slide is-pic-box">
-                    <a href="#">
+                    <a href="#none">
                       <div class="hot-top-box">
                         <div class="hot-profile">
                           <img
@@ -248,7 +251,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide hot-swiper-slide no-pic-box">
-                    <a href="#">
+                    <a href="#none">
                       <div class="hot-top-box">
                         <div class="hot-profile">
                           <img
@@ -285,7 +288,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide hot-swiper-slide is-pic-box">
-                    <a href="#">
+                    <a href="none">
                       <div class="hot-top-box">
                         <div class="hot-profile">
                           <img
@@ -328,7 +331,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide hot-swiper-slide no-pic-box">
-                    <a href="#">
+                    <a href="#none">
                       <div class="hot-top-box">
                         <div class="hot-profile">
                           <img
@@ -398,7 +401,7 @@
                 data-aos-offset="200"
                 data-aos-delay="50"
               >
-                <a href="#">
+                <a href="#none">
                   <div class="interview-card-img-box">
                     <img
                       src="./images/interview-section/interview-section-img01.png"
@@ -424,7 +427,7 @@
                 data-aos-offset="200"
                 data-aos-delay="150"
               >
-                <a href="#">
+                <a href="none">
                   <div class="interview-card-img-box">
                     <img
                       src="./images/interview-section/interview-section-img02.png"
@@ -447,7 +450,7 @@
                 data-aos-offset="200"
                 data-aos-delay="250"
               >
-                <a href="#">
+                <a href="#none">
                   <div class="interview-card-img-box">
                     <img
                       src="./images/interview-section/interview-section-img03.png"
@@ -476,7 +479,7 @@
                 태안에서만 누릴 수 있는 지원들 놓치지 마세요!
                 <img src="./images/twinkle.gif" alt="반짝" />
               </h1>
-              <a href="./interview.html">
+              <a href="./support-page.html">
                 <span>더보기</span>
                 <img src="./images/svg/plus-01-md.svg" alt="더보기+" />
               </a>
@@ -520,7 +523,7 @@
                         <span>상시</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -558,7 +561,7 @@
                         <span>~2024.05.22</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -596,7 +599,7 @@
                         <span>~2024.01.31</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -632,7 +635,7 @@
                         <span>상시</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -668,7 +671,7 @@
                         <span>상시</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -701,7 +704,7 @@
                         <span>상시</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -738,7 +741,7 @@
                         <span>~2024.06.14</span>
                       </li>
                     </ul>
-                    <a href="#" class="youth-supply-to-detail-btn">
+                    <a href="#none" class="youth-supply-to-detail-btn">
                       <span>자세히 보기</span>
                       <img src="./images/svg/chevron-right-01.svg" alt="방향" />
                     </a>
@@ -760,25 +763,25 @@
               >
                 <li class="notice-release-title notice-title">
                   <h3>공지사항</h3>
-                  <a href="#">
+                  <a href="./notice.html">
                     <span>더보기</span>
                     <img src="./images/svg/plus-01-md.svg" alt="더보기" />
                   </a>
                 </li>
                 <li class="notice-release-content notice-content first-content">
-                  <a href="#">
+                  <a href="#none">
                     <h4>2023년 민원서비스 종합평가 결과 공개</h4>
                     <span>2024.02.03</span>
                   </a>
                 </li>
                 <li class="notice-release-content notice-content">
-                  <a href="#">
+                  <a href="./notice-release.html">
                     <h4>태안다움협동조합「마을크리에이터 양성 교육생 모집」</h4>
                     <span>2024.02.03</span>
                   </a>
                 </li>
                 <li class="notice-release-content notice-content">
-                  <a href="#">
+                  <a href="#none">
                     <h4>
                       2023년도 태안군 보건의료원장(개방형직위) 임용시험
                       최종합격자 발표 및 임용후보자 등록요령 공고
@@ -787,7 +790,7 @@
                   </a>
                 </li>
                 <li class="notice-release-content notice-content last-conent">
-                  <a href="#">
+                  <a href="#none">
                     <h4>2023년 민원서비스 종합평가 결과 공개</h4>
                     <span>2024.02.03</span>
                   </a>
@@ -801,7 +804,7 @@
               >
                 <li class="notice-release-title release-title">
                   <h3>보도자료</h3>
-                  <a href="#">
+                  <a href="./notice-release.html">
                     <span>더보기</span>
                     <img src="./images/svg/plus-01-md.svg" alt="더보기" />
                   </a>

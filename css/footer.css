@@ -31,7 +31,7 @@ footer {
   padding: 0 16px;
   background-color: var(--neutral-900);
   color: var(--white);
-  width: 168px;
+  width: 138px;
   height: 48px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -39,11 +39,23 @@ footer {
   background: url(../images/svg/s-chevron-down-01.svg) no-repeat right;
   font-size: var(--body-md-16);
 }
-.footer-select-box select:focus .tean-all-site{
+.footer-select-box select#visit-site{
+  width: 172px;
+}
+/* .footer-select-box select optgroup{
+  background-color: var(--neutral-900);
+  font-size: var(--body-md-16);
+  font-weight: var(--regular);
+  font-family: var(--main-font);
+} */
+.footer-select-box select:focus .all-footer-select{
   display: none;
 }
 select::-ms-expand {
   display: none;
+}
+.footer-select-box select,.footer-select-box select * {
+  font-family: var(--main-font);
 }
 .footer-select-box select option {
   background-color: var(--neutral-900);
