@@ -278,13 +278,13 @@ header.dark .mega-menu {
   position: relative;
 }
 .modal-close{
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
   font-size: 0;
   position: absolute;
   top: 24px;
   right: 24px;
-  background: url(../images/svg/x-01.svg) no-repeat center center;
+  background: url(../images/svg/close-white-btn.svg) no-repeat center center;
 }
 .login-field {
   display: flex;
