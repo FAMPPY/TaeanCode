@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     loop: true,
   });
+  let slides = document.querySelectorAll(".swiper-slide");
+  for (let i of slides) {
+    i.addEventListener("mouseover", function () {
+      supplySwiper.autoplay.stop();
+    });
+    i.addEventListener("mouseout", function () {
+      supplySwiper.autoplay.start();
+    });
+  }
   /* hot-swiper */
   let hotSwiper = new Swiper(".hot-swiper", {
     slidesPerView: 3.05,
