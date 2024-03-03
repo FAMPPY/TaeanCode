@@ -36,6 +36,10 @@
   position: static !important;
   box-shadow: 1px 1px 4px rgba(1, 1, 4, 0.15);
 }
+.interview-item:hover .interview-item-text-box h2,
+.interview-item:hover .interview-item-text-box p{
+  text-decoration: underline;
+}
 .interview-item-img-box {
   width: 100%;
   height: 202px;
