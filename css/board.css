@@ -353,7 +353,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   word-break: keep-all;
-  height: 60px;
+  height: 56px;
 }
 .hot-sub-item-content-view-total-box{
   display: flex;
