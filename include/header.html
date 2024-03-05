@@ -23,6 +23,11 @@
       <ul class="search-login-box">
         <li><button class="search-btn">찾기</button></li>
         <li><a class="header-login-btn" href="#none">로그인</a></li>
+        <li class="header-mobile-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
       </ul>
     </div>
   </div>
@@ -46,8 +51,7 @@
     <div class="mega-menu-inner">
       <div class="dummy"></div>
       <nav class="mega-menu-nav">
-        <ul class="first-menu menu-num">
-        </ul>
+        <ul class="first-menu menu-num"></ul>
         <ul class="second-menu menu-num">
           <li><a href="../interview-story-found.html">창업 분야</a></li>
           <li><a href="../interview-story-employ.html">취업 분야</a></li>
@@ -67,6 +71,63 @@
         </ul>
       </nav>
       <div class="dummy2"></div>
+    </div>
+  </div>
+  <div class="mobile-mega-menu">
+    <div class="mobile-mega-menu-box">
+      <ul>
+        <li>
+          <a href="../board.html" class="mobile-menu-title">태안 Talk</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="../interview-story.html" class="mobile-menu-title">태안 人터뷰</a>
+        </li>
+        <li>
+          <a href="../interview-story-employ.html" class="mobile-menu-sub">취업 분야</a>
+        </li>
+        <li>
+          <a href="../interview-story-found.html" class="mobile-menu-sub">창업 분야</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-title">태안 청년정책</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">일자리</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">창업 지원</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">취업 지원</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">주거 지원</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">교육 지원</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">육아 지원</a>
+        </li>
+        <li>
+          <a href="../support-page.html" class="mobile-menu-sub">공간 대여</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="../notice.html" class="mobile-menu-title">태안 청년정책</a>
+        </li>
+        <li>
+          <a href="../notice.html" class="mobile-menu-sub">공지사항</a>
+        </li>
+        <li>
+          <a href="../notice-release.html" class="mobile-menu-sub">보도자료</a>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="login-modal-bg">
@@ -158,6 +219,15 @@
   const secondMenu = document.querySelector(".second-menu");
   const thirdMenu = document.querySelector(".third-menu");
   const fouthMenu = document.querySelector(".fouth-menu");
+  /* header-mobile-btn */
+  const headerMobileBtn = document.querySelector(".header-mobile-btn");
+  const mobileMegaMenu =document.querySelector(".mobile-mega-menu");
+
+  /* headerMobileBtn 클릭시 active toggle */
+  headerMobileBtn.addEventListener("click", function (e) {
+    headerMobileBtn.classList.toggle("active");
+    mobileMegaMenu.classList.toggle("active");
+  });
 
   /* 각메뉴마다 호버시 헤더 메뉴 액티브 */
   firstMenu.addEventListener("mouseenter", () => {

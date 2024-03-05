@@ -42,12 +42,6 @@ footer {
 .footer-select-box select#visit-site{
   width: 172px;
 }
-/* .footer-select-box select optgroup{
-  background-color: var(--neutral-900);
-  font-size: var(--body-md-16);
-  font-weight: var(--regular);
-  font-family: var(--main-font);
-} */
 .footer-select-box select:focus .all-footer-select{
   display: none;
 }
@@ -98,4 +92,47 @@ select::-ms-expand {
   font-size: var(--body-xs-12);
   text-align: center;
   color: var(--neutral-500);
+}
+/* footer media mobile */
+@media (max-width:767px) {
+  .footer-inner{
+    padding: 0 8px;
+  }
+  .footer-top-box{
+    flex-direction: column;
+  }
+  .footer-btns-box{
+    gap: 12px;
+    justify-content: space-between;
+    order: 2;
+  }
+  .footer-select-box{
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-select-box select {
+    padding: 0;
+    width: 104px;
+    font-size: var(--body-sm-14);
+    background-size: 32px;
+  }
+  .footer-select-box select#visit-site{
+    width: 134px;
+  }
+  .footer-bottom-box{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-sns-box{
+    margin-top: 10px;
+  }
+  .footer-sns-box li a{
+    width: 28px;
+    height: 28px;
+  }
+  .footer-sns-box li a img{
+    width: 16px;
+    height: 16px;
+  }
 }

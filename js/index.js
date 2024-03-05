@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
   /* youth-supply-swiper */
   const supplySwiper = new Swiper(".youth-supply-swiper", {
-    slidesPerView: 4.3,
-    spaceBetween: 24,
     speed: 1200,
     autoplay: {
       delay: 1200,
     },
     loop: true,
+    breakpoints: {
+      375: {
+        slidesPerView: 1.6,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: 4.3,
+        spaceBetween: 24,
+      },
+    },
   });
   let slides = document.querySelectorAll(".swiper-slide");
   for (let i of slides) {
@@ -20,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   /* hot-swiper */
   let hotSwiper = new Swiper(".hot-swiper", {
-    slidesPerView: 3.05,
-    spaceBetween: 34,
     navigation: {
       nextEl: ".hot-commu-section .swiper-button-next",
       prevEl: ".hot-commu-section .swiper-button-prev",
@@ -31,6 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 1800,
     },
     speed: 1500,
+    breakpoints: {
+      1200: {
+        slidesPerView: 3.05,
+        spaceBetween: 34,
+      },
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
   });
   let hotSlideToggle = document.querySelector(".hot-swiper-play-btn");
   let isHotAutoplay = true;
